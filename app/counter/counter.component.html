@@ -1,0 +1,21 @@
+<div>
+
+  <h1>Counters</h1>
+  <small>@ngrx/store State Management</small>
+
+  <div>
+    <form>
+      <input placeholder="Amount" [(ngModel)]="amount">
+    </form>
+    <p>Current Count: {{ counter | async }}</p>
+  </div>
+
+  <div>
+
+    <button (click)="increment()">+</button>
+    <button (click)="decrement()">-</button>
+    <button (click)="reset()">x</button>
+
+  </div>
+
+</div>
