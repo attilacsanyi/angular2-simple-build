@@ -14,13 +14,11 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
-    "noFallthroughCasesInSwitch": true,
-    "outDir": "./dist",
-    "rootDir": "./app"
+    "noFallthroughCasesInSwitch": true
   },
-  "compileOnSave": false,
-  "files": [
-    "app/main.ts",
-    "typings/index.d.ts"
+  "exclude": [
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
   ]
 }
