@@ -1,21 +1,30 @@
-<div>
+<p-panel header="Counters">
+  <small><i>@ngrx/store State Management</i>s</small>
 
-  <h1>Counters</h1>
-  <small>@ngrx/store State Management</small>
+  <form>
+    <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px">
 
-  <div>
-    <form>
-      <input placeholder="Amount" [(ngModel)]="amount">
-    </form>
-    <p>Current Count: {{ counter | async }}</p>
-  </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2">
+          Amount:
+        </div>
+        <div class="ui-grid-col-6">
+          <input pInputText placeholder="Amount" [(ngModel)]="amount">
+        </div>
+      </div>
 
-  <div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-12">
+          <p>Current Count: <b>{{ counter | async }}</b></p>
+        </div>
+      </div>
 
-    <button (click)="increment()">+</button>
-    <button (click)="decrement()">-</button>
-    <button (click)="reset()">x</button>
+    </div>
+  </form>
 
-  </div>
+  <!-- Buttonbar -->
+  <button pButton icon="fa-plus" (click)="increment()"></button>
+  <button pButton icon="fa-minus" (click)="decrement()"></button>
+  <button pButton icon="fa-undo" (click)="reset()"></button>
 
-</div>
+</p-panel>

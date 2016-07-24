@@ -5,12 +5,17 @@ import {Store} from '@ngrx/store';
 import {AppState}  from '../core/states';
 import {IncrementCounterAction, DecrementCounterAction, ResetCounterAction} from './counter.action';
 
+import {Button} from 'primeng/primeng';
+import {InputText} from 'primeng/primeng';
+import {Panel} from 'primeng/primeng';
+
 @Component({
   moduleId: module.id,
   selector: 'counter',
   templateUrl: 'counter.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   directives: [
+    Button, InputText, Panel
   ]
 })
 export class CounterComponent implements OnInit {

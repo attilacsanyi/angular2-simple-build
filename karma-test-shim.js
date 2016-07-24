@@ -28,6 +28,8 @@ var packages = {
   'app': { main: 'main.js', defaultExtension: 'js' },
   'rxjs': { defaultExtension: 'js' },
   'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+
+  'primeng': { main: 'index.js', defaultExtension: 'js' },
 };
 
 // Add angular packages to SystemJS config
@@ -66,6 +68,8 @@ System.config({
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
 
     '@ngrx': '/base/node_modules/@ngrx',
+
+    'primeng': '/base/node_modules/primeng',
   },
   packages: packages
 });

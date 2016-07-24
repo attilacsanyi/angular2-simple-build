@@ -50,6 +50,9 @@ module.exports = function (config) {
       // @ngrx.
       { pattern: 'node_modules/@ngrx/**/*.js', included: false, watched: false },
 
+      // PrimeNG.
+      { pattern: 'node_modules/primeng/**/*.js', included: false, watched: false },
+
       'karma-test-shim.js',
 
       // transpiled application & spec code paths loaded via module imports

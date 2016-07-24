@@ -12,6 +12,8 @@
     'rxjs': 'node_modules/rxjs',
 
     '@ngrx': 'node_modules/@ngrx',
+
+    'primeng': 'node_modules/primeng',
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
@@ -20,6 +22,8 @@
 
     'rxjs': { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+
+    'primeng': { main: 'index.js', defaultExtension: 'js' },
   };
 
   // Add @ngrx packages to SystemJS config
