@@ -64,8 +64,8 @@
     "@ngrx/store-log-monitor": "2.0.0-beta.1",
     "@ngrx/store": "2.0.1",
 
-    "primeng": "1.0.0-beta.10",
-    "primeui": "4.1.13",
+    "primeng": "1.0.0-beta.11",
+    "primeui": "4.1.14",
     "font-awesome": "4.6.3"
   }
 }

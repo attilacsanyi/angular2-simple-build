@@ -5,9 +5,7 @@ import {Store} from '@ngrx/store';
 import {AppState}  from '../core/states';
 import {IncrementCounterAction, DecrementCounterAction, ResetCounterAction} from './counter.action';
 
-import {Button} from 'primeng/primeng';
-import {InputText} from 'primeng/primeng';
-import {Panel} from 'primeng/primeng';
+import {Button, InputText, Panel} from 'primeng/primeng';
 
 @Component({
   moduleId: module.id,
