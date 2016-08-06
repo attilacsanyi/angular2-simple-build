@@ -6,9 +6,9 @@ import {AppState}  from '../core/store';
 import {IncrementCounterAction, DecrementCounterAction, ResetCounterAction} from './counter.action';
 
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'counter',
-  templateUrl: 'counter.component.html',
+  templateUrl: 'app/counter/counter.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   directives: [
   ]

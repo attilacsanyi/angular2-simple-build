@@ -9,10 +9,10 @@ import {CounterComponent} from './counter/counter.component';
 import {STORE_PROVIDERS} from './core/store';
 
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'my-app',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css'],
+  templateUrl: 'app/app.component.html',
+  styleUrls: ['app/app.component.css'],
   directives: [
     ROUTER_DIRECTIVES,
     CounterComponent,
