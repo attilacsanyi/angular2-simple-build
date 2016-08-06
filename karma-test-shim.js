@@ -41,8 +41,8 @@ var packages = {
   'platform-browser-dynamic',
   'router',
   'upgrade'
-].forEach((pkg) => {
-  packages[`@angular/${pkg}`] = { main: 'index.js', defaultExtension: 'js' };
+].forEach(function (pkgName) {
+  packages['@angular/' + pkgName] = { main: 'index.js', defaultExtension: 'js' };
 });
 
 // Add @ngrx packages to SystemJS config
@@ -51,8 +51,8 @@ var packages = {
   'store',
   'store-devtools',
   'store-log-monitor',
-].forEach((pkg) => {
-  packages[`@ngrx/${pkg}`] = { main: 'index.js', defaultExtension: 'js' };
+].forEach(function (pkgName) {
+  packages['@ngrx/' + pkgName] = { main: 'index.js', defaultExtension: 'js' };
 });
 
 System.config({

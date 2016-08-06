@@ -28,8 +28,8 @@
     'store',
     'store-devtools',
     'store-log-monitor',
-  ].forEach((pkg) => {
-    packages[`@ngrx/${pkg}`] = { main: 'index.js', defaultExtension: 'js' };
+  ].forEach(function (pkgName) {
+    packages['@ngrx/' + pkgName] = { main: 'index.js', defaultExtension: 'js' };
   });
 
   var ngPackageNames = [
