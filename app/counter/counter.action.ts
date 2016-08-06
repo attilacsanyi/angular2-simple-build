@@ -1,22 +1,22 @@
 import {BaseAction} from '../core/models';
 
 // Counter Actions
-const PREFIX = 'COUNTER_';
+const PREFIX = '[COUNTER]';
 
 export class IncrementCounterAction extends BaseAction {
   constructor(public amount: number) {
-    super(`${PREFIX}INCREMENT`);
+    super(`${PREFIX} Increment`);
   }
 }
 
 export class DecrementCounterAction extends BaseAction {
   constructor(public amount: number) {
-    super(`${PREFIX}DECREMENT`);
+    super(`${PREFIX} Decrement`);
   }
 }
 
 export class ResetCounterAction extends BaseAction {
   constructor() {
-    super(`${PREFIX}RESET`);
+    super(`${PREFIX} Reset`);
   }
 }
