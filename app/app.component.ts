@@ -12,6 +12,7 @@ import {STORE_PROVIDERS} from './core/store';
   moduleId: module.id,
   selector: 'my-app',
   templateUrl: 'app.component.html',
+  styleUrls: ['app.component.css'],
   directives: [
     ROUTER_DIRECTIVES,
     CounterComponent,
