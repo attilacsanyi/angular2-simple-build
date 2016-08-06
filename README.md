@@ -1,25 +1,26 @@
-# How to use?
+# Angular2 Simple Build
 
-Install
-```bash
-npm i
-```
-Development
-```bash
-npm start
-npm test
-npm run tdd
-```
+### Build
+`npm install`
 
-Production
-```bash
-npm run build-prod
-npm run serve
-```
+### Development
+- `npm start` (live server)
+- `npm test` (test once)
+- `npm run tdd` (tdd)
 
-For further information take a look at [this blog post](http://blog.mgechev.com/2016/06/26/tree-shaking-angular2-production-build-rollup-javascript/).
+### Production
+- `npm run build-prod` (prepare bundle)
+- `npm run serve` (serve content)
 
-# License
+### Reports
+- Tests: `karma/report/tests/index.html`
+- Coverage: `karma/report/coverage/index.html`
 
-MIT
+### Packages
+- [angular2-in-memory-api](https://github.com/angular/in-memory-web-api)
+- [@ngrx/store](https://gist.github.com/btroncone/a6e4347326749f938510), [@ngrx/store-devtools](https://github.com/ngrx/store-devtools), [@ngrx/store-log-monitor](https://github.com/ngrx/store-log-monitor)
+
+### Resources
+- [Angular2 Production](http://blog.mgechev.com/2016/06/26/tree-shaking-angular2-production-build-rollup-javascript/)
+- [Angular2 Testing](http://twofuckingdevelopers.com/2016/01/testing-angular-2-with-karma-and-jasmine/)
 
