@@ -10,15 +10,15 @@
     "typings": "typings install",
     "serve": "http-server . -p 5556",
     "postinstall": "npm run typings",
-    "build-prod": "tsc && browserify -s main app/main.js > app/bundle.js && npm run minify",
+    "build-prod": "npm run test && tsc && browserify -s main app/main.js > app/bundle.js && npm run minify",
     "minify": "uglifyjs app/bundle.js --screw-ie8 --compress,warnings=false --mangle --output app/bundle.min.js",
 
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
-    "test-once": "tsc && karma start karma.conf.js --single-run"
+    "tdd": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
+    "test": "tsc && karma start karma.conf.js --single-run"
   },
   "author": "Minko Gechev <mgechev@gmail.com>",
   "license": "MIT",

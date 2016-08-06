@@ -8,7 +8,7 @@ Development
 ```bash
 npm start
 npm test
-npm run test-once
+npm run tdd
 ```
 
 Production
