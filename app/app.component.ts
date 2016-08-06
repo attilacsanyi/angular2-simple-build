@@ -6,7 +6,7 @@ import {StoreLogMonitorComponent} from '@ngrx/store-log-monitor';
 import {CounterComponent} from './counter/counter.component';
 
 // Providers
-import {STORE_PROVIDERS} from './core/states';
+import {STORE_PROVIDERS} from './core/store';
 
 @Component({
   moduleId: module.id,
