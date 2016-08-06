@@ -1,3 +1,4 @@
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import {disableDeprecatedForms, provideForms} from '@angular/forms';
 import {bootstrap} from '@angular/platform-browser-dynamic';
 // import {enableProdMode} from '@angular/core';
@@ -12,5 +13,7 @@ bootstrap(AppComponent, [
     appRouterProviders,
     disableDeprecatedForms(),
     provideForms(),
+
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
 ]);
 
