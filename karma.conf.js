@@ -8,8 +8,9 @@ module.exports = function (config) {
     frameworks: ['jasmine'],
     plugins: [
       require('karma-jasmine'),
+      require('karma-coverage'),
       require('karma-chrome-launcher'),
-      require('karma-htmlfile-reporter')
+      require('karma-htmlfile-reporter'),
       require('karma-phantomjs-launcher'),
     ],
 
@@ -73,8 +74,10 @@ module.exports = function (config) {
     },
 
     exclude: [],
-    preprocessors: {},
-    reporters: ['progress', 'html'],
+    preprocessors: {
+      'app/**/!(*spec|*mock).js': ['coverage']
+    },
+    reporters: ['progress', 'html', 'coverage'],
 
     // HtmlReporter configuration
     htmlReporter: {
@@ -84,6 +87,14 @@ module.exports = function (config) {
       // Optional
       pageTitle: 'Unit Tests',
       subPageTitle: __dirname
+    },
+
+    // CoverageReporter configuration
+    coverageReporter: {
+      dir: 'karma/report/coverage',
+      reporters: [
+        { type: 'json', subdir: '.', file: 'coverage-final.json' }
+      ]
     },
 
     phantomjsLauncher: {
