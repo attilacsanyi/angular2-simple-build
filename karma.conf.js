@@ -10,6 +10,7 @@ module.exports = function (config) {
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
       require('karma-htmlfile-reporter')
+      require('karma-phantomjs-launcher'),
     ],
 
     customLaunchers: {
@@ -85,11 +86,16 @@ module.exports = function (config) {
       subPageTitle: __dirname
     },
 
+    phantomjsLauncher: {
+      // Have phantomjs exit if a ResourceError is encountered (useful if karma exits without killing phantom)
+      exitOnResourceError: true
+    },
+
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
     singleRun: false
   })
 }
