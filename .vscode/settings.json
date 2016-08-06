@@ -11,7 +11,9 @@
         // Exclude sourcemap files
         "app/**/*.js.map": true,
         // Exclude declaration files files
-        "app/**/*.d.ts": true
+        "app/**/*.d.ts": true,
+        // Exclude generated bundles
+        "app/bundle*.js": true
     },
     "search.exclude": {
         "**/node_modules": true,
@@ -26,6 +28,8 @@
         // Exclude sourcemap files
         "app/**/*.js.map": true,
         // Exclude declaration files files
-        "app/**/*.d.ts": true
+        "app/**/*.d.ts": true,
+        // Exclude generated bundles
+        "app/bundle*.js": true
     }
 }
