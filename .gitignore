@@ -15,5 +15,5 @@ app/**/*.d.ts
 npm-debug.log
 
 # test
-_test-output
+karma
 
