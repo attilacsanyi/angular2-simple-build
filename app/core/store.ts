@@ -21,7 +21,7 @@ export const STORE_PROVIDERS: Provider[] = [
   ...instrumentStore({
     monitor: useLogMonitor({
       // Default log monitor options
-      position: 'bottom',
+      position: 'right',
       visible: false,
       size: 0.3
     })
