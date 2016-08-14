@@ -10,8 +10,6 @@ import {IncrementCounterAction, DecrementCounterAction, ResetCounterAction} from
   selector: 'counter',
   templateUrl: 'app/counter/counter.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  directives: [
-  ]
 })
 export class CounterComponent implements OnInit {
 

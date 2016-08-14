@@ -1,19 +1,13 @@
-import {LocationStrategy, HashLocationStrategy} from '@angular/common';
-import {disableDeprecatedForms, provideForms} from '@angular/forms';
-import {bootstrap} from '@angular/platform-browser-dynamic';
 // import {enableProdMode} from '@angular/core';
 
-import {AppComponent} from './app.component';
-import {appRouterProviders} from './app.routes';
+// The browser platform with a compiler
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+
+// The app module
+import {AppModule} from './app.module';
 
 // Enable PROD mode
 // enableProdMode();
 
-bootstrap(AppComponent, [
-    appRouterProviders,
-    disableDeprecatedForms(),
-    provideForms(),
-
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
-]);
-
+// Compile and launch the module
+platformBrowserDynamic().bootstrapModule(AppModule);
