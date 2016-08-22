@@ -1,9 +1,7 @@
 import {NgModule} from '@angular/core';
 
 // Modules
-import {BrowserModule}  from '@angular/platform-browser';
-import {RouterModule} from '@angular/router';
-import {FormsModule} from '@angular/forms';
+import {SharedModule} from '../shared/shared.module';
 
 // Components
 import {CounterComponent} from './counter.component';
@@ -11,14 +9,7 @@ import {CounterComponent} from './counter.component';
 import {routing} from './counter.routing';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    RouterModule,
-    FormsModule,
-    routing
-  ],
-  declarations: [
-    CounterComponent
-  ]
+  imports: [SharedModule, routing],
+  declarations: [CounterComponent]
 })
 export default class CounterModule { }

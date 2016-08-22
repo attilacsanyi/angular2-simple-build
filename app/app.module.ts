@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 
 // Modules
 import {BrowserModule} from '@angular/platform-browser';
+import {SharedModule} from './shared/shared.module';
 import {HomeModule} from './home/home.module';
 
 // Components
@@ -19,6 +20,7 @@ import {routing} from './app.routing';
         BrowserModule,
         HomeModule,
         routing,
+        SharedModule.forRoot()
     ],
     declarations: [
         AppComponent,
