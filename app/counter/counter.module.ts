@@ -19,7 +19,6 @@ import {routing} from './counter.routing';
   ],
   declarations: [
     CounterComponent
-  ],
-  providers: []
+  ]
 })
 export class CounterModule { }
