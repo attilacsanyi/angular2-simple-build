@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 // Modules
 import {BrowserModule} from '@angular/platform-browser';
 import {CounterModule} from './counter/counter.module';
+import {HomeModule} from './home/home.module';
 
 // Components
 import {AppComponent} from './app.component';
@@ -18,6 +19,7 @@ import {routing} from './app.routing';
     imports: [
         BrowserModule,
         CounterModule,
+        HomeModule,
         routing,
     ],
     declarations: [
