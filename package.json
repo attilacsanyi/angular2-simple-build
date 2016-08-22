@@ -11,7 +11,7 @@
     "serve": "http-server . -p 5556",
     "postinstall": "npm run typings",
     "build-prod": "npm run test && tsc && browserify -s main app/main.js > app/bundle.js && npm run minify",
-    "minify": "uglifyjs app/bundle.js --screw-ie8 --compress,warnings=false --mangle --output app/bundle.min.js",
+    "minify": "uglifyjs app/bundle.js --screw-ie8 --keep-fnames --compress,warnings=false --mangle --output app/bundle.min.js",
 
     "tsc": "tsc",
     "tsc:w": "tsc -w",
