@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 
 // Modules
 import {BrowserModule} from '@angular/platform-browser';
-import {CounterModule} from './counter/counter.module';
 import {HomeModule} from './home/home.module';
 
 // Components
@@ -18,7 +17,6 @@ import {routing} from './app.routing';
 @NgModule({
     imports: [
         BrowserModule,
-        CounterModule,
         HomeModule,
         routing,
     ],

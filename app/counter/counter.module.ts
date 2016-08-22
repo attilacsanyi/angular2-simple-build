@@ -21,4 +21,4 @@ import {routing} from './counter.routing';
     CounterComponent
   ]
 })
-export class CounterModule { }
+export default class CounterModule { }
